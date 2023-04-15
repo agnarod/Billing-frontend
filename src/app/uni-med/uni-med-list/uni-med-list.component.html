@@ -1,0 +1,28 @@
+<div class="row col-md-12">
+    <div class="row">
+        <div class="col-sm-5">
+            <label for="filter">Buscar</label>
+            <input type="text" id="filter">
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <span class="col col-md-4 bg-header">
+                    Clave
+                </span>
+                <span class="col col-md-8 bg-header">
+                    Descripcion
+                </span>
+            </div>
+            <app-uni-med-item *ngFor="let row of rows; index as i" [item]="row" (dblclick)="onDblClick(i)"></app-uni-med-item>
+        </div>
+        <!-- <table width="100%">
+            <tr>
+                <th>Clave</th>
+                <th>Descripcion</th>
+            </tr>
+            <tr app-uni-med-item *ngFor="let row of rows; index as i;" [item]="row" (dblclick)="onDblClick(i)"></tr>
+        </table> -->
+    </div>
+</div>

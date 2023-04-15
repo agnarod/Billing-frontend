@@ -1,0 +1,33 @@
+<nav class="navbar navbar-dark bg-info">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a [routerLink]="['ingresos']" class="navbar-brand">Application Title</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li routerLinkActive="nav-item active"><a [routerLink]="['ingresos']">Ingresos</a></li>
+                <li routerLinkActive="nav-item active"><a [routerLink]="['egresos']">Egresos</a></li>
+                <li routerLinkActive="nav-item active"><a [routerLink]="['traslados']">Traslados</a></li>
+                <li routerLinkActive="nav-item active"><a [routerLink]="['pagos']">Pagos</a></li>
+                <li routerLinkActive="nav-item active"><a [routerLink]="['nomina']">Nómina</a></li>
+                <li routerLinkActive="nav-item active"><a [routerLink]="['clientes']">Clientes</a></li>
+                <li routerLinkActive="nav-item active"><a [routerLink]="['prodserv']">Productos/Servicios</a></li>
+                <li routerLinkActive="nav-item active"><a [routerLink]="['unimed']">Unidad de Medida</a></li>
+                <li routerLinkActive="nav-item active"><a [routerLink]="['lotes']">Facturas por Lote</a></li>
+                <li routerLinkActive="nav-item active"><a [routerLink]="['usuarios']">Usuarios</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a style="cursor: pointer;" (click)="onLogout()">Cerrar Sesión</a></li>
+                <li class="dropdown"
+                appDropdown>
+                <a style="cursor: pointer;" class="dropdown-toggle" role="button">Administrar <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a style="cursor: pointer;">Configuración</a></li>
+                    <li><a style="cursor: pointer;">Mensajes</a></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav>

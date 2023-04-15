@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-xs-12">
+        <form [formGroup]="unimedForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="btn btn-primary" type="button">Nuevo</button>
+                    <button class="btn btn-success" type="submit">Grabar</button>
+                    <button class="btn btn-danger" type="button">Desactivar</button>
+                    <button class="btn btn-secundary" type="button">Cancelar</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5 form-group">
+                    <label for="cv">Clave</label>
+                    <input type="text" id="cv"
+                    class="form-control"
+                    formControlName="cv"
+                    required>
+                </div>
+                <div class="col-sm-5 form-group">
+                    <label for="desc">Descripcion</label>
+                    <input type="text" id="desc"
+                     class="form-control"
+                     formControlName="desc"
+                     required>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
